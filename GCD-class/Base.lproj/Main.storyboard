@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.9" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with attributes relative to the layout margin" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GCD_class" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZX8-KS-Fe7">
+                                <rect key="frame" x="16" y="109" width="272" height="471"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ZX8-KS-Fe7" secondAttribute="height" multiplier="179:175" id="CBn-ZD-pRF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="CBn-ZD-pRF"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Texto..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RvS-GT-7df">
+                                <rect key="frame" x="272" y="49" width="56" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSf-qr-sdq">
+                                <rect key="frame" x="296" y="109" width="288" height="471"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="nbw-4f-V8d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="nbw-4f-V8d"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RvS-GT-7df" firstAttribute="centerX" secondItem="y3c-jy-aDJ" secondAttribute="centerX" id="2ZZ-W5-SGy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kSf-qr-sdq" secondAttribute="trailing" constant="109" id="3oj-cK-AG8"/>
+                            <constraint firstItem="ZX8-KS-Fe7" firstAttribute="width" secondItem="kSf-qr-sdq" secondAttribute="width" constant="-16" id="3xK-Mw-TJ2"/>
+                            <constraint firstItem="kSf-qr-sdq" firstAttribute="leading" secondItem="ZX8-KS-Fe7" secondAttribute="trailing" constant="8" id="41m-Qs-rSe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZX8-KS-Fe7" secondAttribute="bottom" constant="20" id="8GZ-K3-aKz"/>
+                            <constraint firstItem="ZX8-KS-Fe7" firstAttribute="width" secondItem="kSf-qr-sdq" secondAttribute="width" id="8t2-qf-irm"/>
+                            <constraint firstAttribute="centerY" secondItem="ZX8-KS-Fe7" secondAttribute="centerY" constant="-44.5" id="CLT-9M-hI8"/>
+                            <constraint firstAttribute="centerX" secondItem="RvS-GT-7df" secondAttribute="centerX" id="ED9-DC-Vwh"/>
+                            <constraint firstAttribute="centerX" secondItem="ZX8-KS-Fe7" secondAttribute="centerX" constant="148" id="IFy-e9-1mS"/>
+                            <constraint firstItem="ZX8-KS-Fe7" firstAttribute="height" secondItem="kSf-qr-sdq" secondAttribute="height" id="JkU-Da-3gr"/>
+                            <constraint firstItem="RvS-GT-7df" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="29" id="Ls9-nu-8x0"/>
+                            <constraint firstAttribute="centerX" secondItem="kSf-qr-sdq" secondAttribute="centerX" id="PsE-3c-DMG"/>
+                            <constraint firstItem="kSf-qr-sdq" firstAttribute="leading" secondItem="ZX8-KS-Fe7" secondAttribute="trailing" constant="8" id="ScC-As-5X7"/>
+                            <constraint firstItem="kSf-qr-sdq" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="dFa-cc-rzl"/>
+                            <constraint firstItem="ZX8-KS-Fe7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gf9-gj-Fl7"/>
+                            <constraint firstAttribute="centerX" secondItem="ZX8-KS-Fe7" secondAttribute="centerX" id="pfb-dQ-nuJ"/>
+                            <constraint firstAttribute="centerY" secondItem="kSf-qr-sdq" secondAttribute="centerY" constant="-44.5" id="qbY-NF-PdQ"/>
+                            <constraint firstItem="ZX8-KS-Fe7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="89" id="tf1-Yi-sI4"/>
+                            <constraint firstAttribute="centerX" secondItem="kSf-qr-sdq" secondAttribute="centerX" constant="-140" id="ufP-th-dg4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kSf-qr-sdq" secondAttribute="bottom" constant="20" id="ux4-2u-ZPH"/>
+                            <constraint firstAttribute="centerY" secondItem="ZX8-KS-Fe7" secondAttribute="centerY" constant="103.5" id="xz5-ia-rY5"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8t2-qf-irm"/>
+                                <exclude reference="pfb-dQ-nuJ"/>
+                                <exclude reference="tf1-Yi-sI4"/>
+                                <exclude reference="xz5-ia-rY5"/>
+                                <exclude reference="3oj-cK-AG8"/>
+                                <exclude reference="41m-Qs-rSe"/>
+                                <exclude reference="PsE-3c-DMG"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="even" destination="ZX8-KS-Fe7" id="a59-zX-PDb"/>
+                        <outlet property="lblTexto" destination="RvS-GT-7df" id="eBH-ew-pOJ"/>
+                        <outlet property="odds" destination="kSf-qr-sdq" id="Lif-jn-GhM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="435" y="315"/>
+        </scene>
+    </scenes>
+</document>
