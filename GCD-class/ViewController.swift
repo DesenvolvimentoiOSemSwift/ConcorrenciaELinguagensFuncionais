@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         
         
         //fila serial, FIFO, async
-        var queueSerial:dispatch_queue_t
+        let queueSerial:dispatch_queue_t
         queueSerial = dispatch_queue_create("com.example.Serial", DISPATCH_QUEUE_SERIAL)
         /*
         
@@ -85,7 +85,7 @@ class ViewController: UIViewController {
         
         //fila Concorrente, FIFO pra despachar, mas pode acabar em qualquer ordem
         //async
-        var queueConc:dispatch_queue_t
+        let queueConc:dispatch_queue_t
         queueConc = dispatch_queue_create("com.example.Concurrent", DISPATCH_QUEUE_CONCURRENT);
 
 /*
@@ -168,7 +168,7 @@ class ViewController: UIViewController {
         var numbers = [0]
         var odds = []
         var even = []
-        for (var i=1;i<10000;i++)
+        for i in 1..<10000
         {
             numbers+=[i]
         }
